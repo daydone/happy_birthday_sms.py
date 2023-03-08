@@ -5,5 +5,7 @@
 #I wonder if pulling the contact data into a database may work better
 #Things I need to know (How to pull data from calendar app/How to send SMS with my script/Whether I need to store the data for my contacts or if I can just write a check in my script pointed at the API?)
 
-if BirthDate=CurrentDate
-sms.PhoneNumber ("Happy Birthday "ContactsName"! I hope you have a wonderful day"")
+#if BirthDate=CurrentDate
+#sms.PhoneNumber ("Happy Birthday "ContactsName"! I hope you have a wonderful day"")
+hello_world = "Hello World!"
+print hello_world
