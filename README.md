@@ -6,6 +6,13 @@ Before anything else this project is to help me learn Devops principles namely h
 This is a python script that will check my iContacts once a day to see who's birthday it is and send an SMS to them and alert me that it has done so. 
 The idea is to have this setup and run on a Linux server to make sure I message people on their birthdays without having to change or add the data to a database or mess with it other than to initially set it up. Once I have a working prototype I will put 2 new sections in this README they will be as follows.
 
+Goals for features
+-Allow a command to be run to list all the people the script plans on sending messages to
+-Options to remove certain contacts from that list 
+-Ability to list contacts that do not contain a birthday field
+
 Initial Configuration 
+
+Operation
 
 Debug/Common Issues/FAQ's
