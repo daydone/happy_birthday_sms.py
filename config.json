@@ -1,0 +1,12 @@
+{
+  "twilio": {
+    "account_sid": "your_twilio_account_sid",
+    "auth_token": "your_twilio_auth_token",
+    "twilio_number": "your_twilio_phone_number",
+    "my_number": "your_phone_number"
+  },
+  "icloud": {
+    "username": "your_icloud_username",
+    "password": "your_icloud_password"
+  }
+}
