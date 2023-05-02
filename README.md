@@ -1,19 +1,28 @@
-# happy_birthday_sms.py
-THIS IS A WORK IN PROGRESS PLEASE DO NOT THINK THIS IS A COMPLETED APPLICATION
+  **NOTE: This is a personal project that is provided as-is, and may not be actively maintained. Use at your own discretion.**
 
-PREFACE
-Before anything else this project is to help me learn Devops principles namely how to use GitHub Actions, Docker and python.
+## Preface
+  This project is designed to help me learn DevOps principles, specifically how to use GitHub Actions, Docker, and Python.
 
-This is a python script that will check my iContacts once a day to see who's birthday it is and send an SMS to them and alert me that it has done so. 
-The idea is to have this setup and run on a Linux server to make sure I message people on their birthdays without having to change or add the data to a database or mess with it other than to initially set it up. Once I have a working prototype I will put 2 new sections in this README they will be as follows.
+## Happy Birthday SMS
+  This application automatically sends Happy Birthday messages to your contacts by pulling information from your Apple Contacts and Calendar.
 
-Goals for features
--Allow a command to be run to list all the people the script plans on sending messages to
--Options to remove certain contacts from that list 
--Ability to list contacts that do not contain a birthday field
+## Prerequisites
+  - Docker installed on your system
+  - A `config.json` file saved in your home directory (`~/config.json`)
 
-Initial Configuration 
+**An example `config.json` file can be found in the `happy_birthday_sms.py` directory.**
 
-Operation
+## Deploying the Application
+  To deploy the application, follow these steps:
 
-Debug/Common Issues/FAQ's
+    1. Pull the Docker image from the repository:
+        docker pull daydone/happy-birthday-sms
+
+    2.Run the Docker container, mounting your config.json file into the container:
+        docker run -v ~/config.json:/app/config.json daydone/happy-birthday-sms
+
+The container will run the application and send messages to your specified phone number(s) for any contacts with a birthday on the current day.
+
+If you need to make any changes to the config.json file, you can modify the file on your local machine and restart the Docker container. The changes will be automatically picked up by the application.
+
+Happy birthday messaging!
