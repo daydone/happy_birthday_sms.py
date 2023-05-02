@@ -1,16 +1,17 @@
 {
-  "twilio": {
-    "account_sid": "YOUR_ACCOUNT_SID",
-    "auth_token": "YOUR_AUTH_TOKEN",
-    "twilio_number": "YOUR_TWILIO_NUMBER",
-    "my_number": "YOUR_PHONE_NUMBER"
-  },
-  "icloud": {
-    "username": "YOUR_ICLOUD_USERNAME",
-    "password": "YOUR_ICLOUD_PASSWORD"
-  },
-  "contacts": {
-    "include": ["Alice", "Bob"],
-    "exclude": ["Charlie"]
-  }
+    "twilio": {
+        "account_sid": "your_account_sid",
+        "auth_token": "your_auth_token",
+        "twilio_number": "your_twilio_number",
+        "my_number": "your_phone_number"
+    },
+    "icloud": {
+        "username": "your_icloud_username",
+        "password": "your_icloud_password"
+    },
+    "contacts": {
+        "include": [],
+        "exclude": [],
+        "message_template": "Happy Birthday {name}! Have a wonderful day."
+    }
 }
