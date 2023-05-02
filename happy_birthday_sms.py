@@ -44,13 +44,16 @@ def check_birthdays():
     api = pyicloud.PyiCloudService(username, password)
     cal = api.calendar.events()
     today = datetime.today().strftime('%m%d')
+    include_list = config['contacts'].get('include', [])
+    exclude_list = config['contacts'].get('exclude', [])
     for event in cal:
         summary = event.get('summary')
         start = event.get('startDate').strftime('%m%d')
         if start == today and 'Birthday' in summary:
             name = summary.split('\'s')[0].replace('Birthday ', '')
             phone = event.get('phone', '')
-            send_sms(my_number, f"Happy Birthday, {name}!")
+            if name in include_list or (not exclude_list) or (name not in exclude_list):
+                send_sms(my_number, f"Happy Birthday, {name}!")
             
 # Main function
 if __name__ == '__main__':
