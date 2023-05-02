@@ -1,5 +1,6 @@
 # happy_birthday_sms.py
 THIS IS A WORK IN PROGRESS PLEASE DO NOT THINK THIS IS A COMPLETED APPLICATION
+
 PREFACE
 Before anything else this project is to help me learn Devops principles namely how to use GitHub Actions, Docker and python.
 
