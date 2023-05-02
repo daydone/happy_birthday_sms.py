@@ -1,12 +1,16 @@
 {
   "twilio": {
-    "account_sid": "your_twilio_account_sid",
-    "auth_token": "your_twilio_auth_token",
-    "twilio_number": "your_twilio_phone_number",
-    "my_number": "your_phone_number"
+    "account_sid": "YOUR_ACCOUNT_SID",
+    "auth_token": "YOUR_AUTH_TOKEN",
+    "twilio_number": "YOUR_TWILIO_NUMBER",
+    "my_number": "YOUR_PHONE_NUMBER"
   },
   "icloud": {
-    "username": "your_icloud_username",
-    "password": "your_icloud_password"
+    "username": "YOUR_ICLOUD_USERNAME",
+    "password": "YOUR_ICLOUD_PASSWORD"
+  },
+  "contacts": {
+    "include": ["Alice", "Bob"],
+    "exclude": ["Charlie"]
   }
 }
