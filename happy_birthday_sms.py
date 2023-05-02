@@ -17,7 +17,7 @@ from datetime import datetime
 from twilio.rest import Client
 
 # Read configuration from file
-with open('/path/to/your/config.json', 'r') as f:
+with open('~/config.json', 'r') as f:
     config = json.load(f)
 
 # Twilio credentials
