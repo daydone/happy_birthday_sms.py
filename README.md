@@ -31,24 +31,25 @@ If you need to make any changes to the config.json file, you can modify the file
 
 Happy birthday messaging!
 
-
 Debugging and Common Issues
+---------------------------------
+
 Here are some common issues and FAQs that might help you resolve any problems you encounter while using Happy Birthday SMS.
 
-My contacts are not being loaded
+- My contacts are not being loaded
 Make sure that the iCloud account information in your config.json file is correct. Also, make sure that you have an active internet connection and that you can access iCloud contacts from your device.
 
-I am not receiving any messages
+- I am not receiving any messages
 Make sure that the Twilio account information in your config.json file is correct. Also, make sure that you have an active internet connection and that your phone number is valid and able to receive SMS messages.
 
-The application is not running
+- The application is not running
 Make sure that Docker is installed on your system and that you have pulled the daydone/happy-birthday-sms image from the Docker repository. Also, make sure that your config.json file is saved in the correct location and has the correct structure.
 
-How can I modify the message template?
+- How can I modify the message template?
 You can modify the message template by changing the message_template value in the contacts section of your config.json file. You can use {name} as a placeholder for the contact's name.
 
-Can I include or exclude more than one contact?
+- Can I include or exclude more than one contact?
 Yes, you can include or exclude multiple contacts by adding them to the include or exclude list in the contacts section of your config.json file.
 
-Is this project ready for production use?
+- Is this project ready for production use?
 No, this project is a work in progress and is not ready for production use. Use it at your own discretion.
