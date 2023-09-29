@@ -1,7 +1,7 @@
 **NOTE: This is a personal project that is provided as-is, and may not be actively maintained. Use at your own discretion.**
 
 ## Preface
-This project is designed to help me learn DevOps principles, specifically how to use GitHub Actions, Docker, and Python.
+This project is a WORK IN PROGRESS and is designed to help me learn DevOps principles, specifically how to use GitHub Actions, Docker, and Python.
 
 ## Happy Birthday SMS
 This application automatically sends Happy Birthday messages to your contacts by pulling information from your Apple Contacts and Calendar.
